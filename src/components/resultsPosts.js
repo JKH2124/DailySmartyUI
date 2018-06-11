@@ -7,26 +7,26 @@ class ResultsPosts extends Component {
 
     renderPosts() {
         const posts = this.props.posts.map((post, index) => {
-            return <Post key={index} {...post}/>
+            return <Post type="results" key={index} {...post}/>
         })
         return posts;
     }
 
     render() {
         return (
-            <ul className="results-post">
-                <div className="results-posts_wrapper">
-                    <div className="results-posts_posts">
+            <div className="results-posts">
+                <div className="results-posts__wrapper">
+                    <ul className="results-posts__posts">
                         {this.renderPosts()}
-                    </div>
+                    </ul>
                 </div>
-            </ul>
+            </div>
         )
     }
 }
 
 function mapStateToProps(state) {
-    return {
+    return { 
         posts: state.posts.resultsPosts
     }
 }
