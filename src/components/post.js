@@ -13,11 +13,9 @@ class Post extends Component {
         let links = this.props.post_links.map((post_link, index) => {
             return (
                 <div className="post-link" keys={index}>
-                    <div className="post-link_box">
-
-                    </div>
+                    <div className="post-link_box"></div>
                     <div className="post-link_link">
-                        <a href={post_link.link.url}>Useful Link #{index +1}</a>
+                        <a href={post_link.link_url}>Useful Link #{index +1}</a>
                     </div>
                 </div>
             )
@@ -51,8 +49,7 @@ class Post extends Component {
                     </div>
                 </li>
             )
-        }
-           
+        }     
     }
 }
 
