@@ -1,7 +1,3 @@
-.post-topic {
-    margin: 0 4px;
-}
-
 body {
     font-family: 'Lato' sans-serif;
 }
@@ -39,4 +35,5 @@ $color-blue-one: #0079FF;
 
 @import './searchBar';
 @import './recentPosts';
+@import './post';
 
